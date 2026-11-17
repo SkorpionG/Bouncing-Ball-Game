@@ -1,0 +1,42 @@
+{
+  "name": "bouncing-ball-game",
+  "version": "1.0.0",
+  "description": "A simple bouncing ball brick-breaker game built using HTML, CSS, and JS.",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky",
+    "husky:init": "chmod +x .husky/pre-commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkorpionG/Bouncing-Ball-Game.git"
+  },
+  "keywords": [
+    "bouncing-ball",
+    "brick-breaker",
+    "canvas",
+    "game",
+    "html5-game",
+    "vanilla-javascript"
+  ],
+  "author": "SkorpionG",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SkorpionG/Bouncing-Ball-Game/issues"
+  },
+  "homepage": "https://github.com/SkorpionG/Bouncing-Ball-Game#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "globals": "^17.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.1",
+    "prettier": "^3.10.1"
+  }
+}
