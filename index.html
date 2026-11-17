@@ -1,42 +1,76 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Primary Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A classic HTML5 Canvas bouncing ball brick-breaker game built with pure HTML, CSS, and Vanilla JavaScript."
+    />
     <meta name="author" content="SkorpionG" />
     <meta name="creator" content="SkorpionG" />
     <meta name="publisher" content="SkorpionG" />
     <meta name="application-name" content="彈跳球遊戲 Bouncing Ball Game" />
     <meta
-      name="description"
-      content="A classic HTML5 Canvas bouncing ball brick-breaker game built with pure HTML, CSS, and Vanilla JavaScript."
-    />
-    <meta
       name="keywords"
       content="bouncing ball game, brick breaker, 彈跳球遊戲, canvas game, vanilla javascript"
     />
 
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="robots" content="noindex, nofollow" /> -->
+    <link rel="canonical" href="https://skorpiong.github.io/Bouncing-Ball-Game/" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://skorpiong.github.io/Bouncing-Ball-Game/" />
     <meta property="og:title" content="彈跳球遊戲 Bouncing Ball Game" />
     <meta
       property="og:description"
       content="A classic HTML5 Canvas bouncing ball brick-breaker game built with pure HTML, CSS, and Vanilla JavaScript."
     />
-    <meta property="og:image" content="./public/og_image.png" />
+    <meta
+      property="og:image"
+      content="https://skorpiong.github.io/Bouncing-Ball-Game/public/og-image.png"
+    />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="536" />
+    <meta
+      property="og:image:alt"
+      content="Bouncing Ball Game preview showing paddle, ball, and bricks"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="彈跳球遊戲 Bouncing Ball Game" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://skorpiong.github.io/Bouncing-Ball-Game/" />
     <meta name="twitter:title" content="彈跳球遊戲 Bouncing Ball Game" />
     <meta
       name="twitter:description"
       content="A classic HTML5 Canvas bouncing ball brick-breaker game built with pure HTML, CSS, and Vanilla JavaScript."
     />
-    <meta name="twitter:image" content="./public/twitter_image.png" />
+    <meta
+      name="twitter:image"
+      content="https://skorpiong.github.io/Bouncing-Ball-Game/public/twitter-image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Bouncing Ball Game preview showing paddle, ball, and bricks"
+    />
+
+    <!-- Favicons and App Icons -->
+    <link rel="icon" href="./public/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./public/apple-touch-icon.png" />
+    <link rel="manifest" href="./public/site.webmanifest" />
 
     <title>彈跳球遊戲 Bouncing Ball Game</title>
-    <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+
+    <!-- Stylesheets & Scripts -->
     <link rel="stylesheet" href="./src/styles/style.css" />
+    <script type="module" src="./src/metadata-sync.js"></script>
   </head>
 
   <body>
@@ -49,6 +83,6 @@
         aria-label="Bouncing Ball Game canvas"
       ></canvas>
     </main>
-    <script src="./src/app.js"></script>
+    <script type="module" src="./src/app.js"></script>
   </body>
 </html>

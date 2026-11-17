@@ -11,7 +11,11 @@ A classic Bouncing Ball brick-breaker game built with pure HTML, CSS, and Vanill
 
 ## Technologies
 
-- HTML5 Canvas for game rendering
-- Vanilla JavaScript for game logic
-- CSS for layout and styling
-- ESLint and Prettier for code formatting and quality
+- HTML5 Canvas
+- CSS3
+- Vanilla JavaScript (ES Modules)
+- ESLint, Prettier, Husky, and `lint-staged`
+
+## Local Preview
+
+Open `index.html` with VS Code Live Server or run a local static server from the project root.

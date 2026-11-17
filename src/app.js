@@ -178,11 +178,9 @@ function createBricks(totalBricks, maxCanvasWidth, paddleY, ball) {
 
 function resolveBrickBounceAxes(ball, brick, prevX, prevY) {
   const hitHorizontal =
-    prevX + ball.radius <= brick.x ||
-    prevX - ball.radius >= brick.x + brick.width;
+    prevX + ball.radius <= brick.x || prevX - ball.radius >= brick.x + brick.width;
   const hitVertical =
-    prevY + ball.radius <= brick.y ||
-    prevY - ball.radius >= brick.y + brick.height;
+    prevY + ball.radius <= brick.y || prevY - ball.radius >= brick.y + brick.height;
 
   if (hitHorizontal && !hitVertical) {
     return { flipX: true, flipY: false };
@@ -234,12 +232,7 @@ function handleBrickCollisions(ball, bricks, prevX, prevY) {
 
 const ball = new Ball(GAME_CONFIG.ball);
 const paddle = new Paddle(GAME_CONFIG.paddle);
-const bricks = createBricks(
-  GAME_CONFIG.brick.total,
-  canvasWidth,
-  paddle.y,
-  ball,
-);
+const bricks = createBricks(GAME_CONFIG.brick.total, canvasWidth, paddle.y, ball);
 
 let destroyedCount = 0;
 let isGameOver = false;
